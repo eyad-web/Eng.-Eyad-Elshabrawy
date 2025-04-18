@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    
+    color: #333;
+    
+    line-height: 1.6;
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, black 0%, #666 100%);
+  
+    height: 100vh;
+   
+    display: flex;
+ 
+    align-items: center;
+ 
+    justify-content: center;
+    
+    text-align: center;
+    
+    color: white;
+  
+    padding: 0 20px;
+    
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    /* حجم الخط الكبير */
+    margin-bottom: 1rem;
+    /* هامش سفلي */
+}
+
+.hero-content h1 span {
+    color: goldenrod;
+    /* لون مميز للاسم */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    /* حجم الخط */
+    margin-bottom: 2rem;
+    /* هامش سفلي */
+}
+
+/* الأزرار */
+.btn {
+    display: inline-block;
+    /* لجعل الزر يأخذ مساحة محتواه فقط */
+    background: #ffd700;
+    /* لون الخلفية */
+    color: #333;
+    /* لون النص */
+    padding: 12px 30px;
+    /* هامش داخلي */
+    border-radius: 50px;
+    /* زوايا دائرية */
+    text-decoration: none;
+    /* إزالة الخط من تحت الرابط */
+    font-weight: bold;
+    /* نص غامق */
+    transition: all 0.3s ease;
+    /* تأثير انتقالي لجميع الخصائص */
+    border: none;
+    /* إزالة الحدود */
+    cursor: pointer;
+    /* تغيير شكل المؤشر */
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    /* تحريك الزر لأعلى قليلاً */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* إضافة ظل */
+}
+
+/* الأقسام العامة */
+section {
+  
+  
+    padding: 80px 20px;
+    /* هامش داخلي */
+    max-width: 1200px;
+    /* أقصى عرض للمحتوى */
+    margin: 0 auto;
+    /* توسيط القسم */
+}
+
+h2 {
+    text-align: center;
+    /* توسيط العنوان */
+    font-size: 2.2rem;
+    /* حجم الخط */
+    margin-bottom: 50px;
+    /* هامش سفلي */
+}
+
+h2 span {
+    color:  goldenrod;
+    /* لون مميز لجزء من النص */
+}
+
+/* قسم المشاريع */
+.project-grid {
+    display: grid;
+    /* عرض المشاريع في شبكة */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* أعمدة متجاوبة */
+    gap: 30px;
+    /* فراغ بين العناصر */
+}
+
+.project {
+    background: linear-gradient(135deg, black 0%, #666 100%);
+    /* خلفية بيضاء */
+    border-radius: 10px;
+    /* زوايا مدورة */
+    overflow: hidden;
+    /* إخفاء المحتوى الزائد */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف */
+    transition: all 0.3s ease;
+    /* تأثير انتقالي */
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    /* تحريك المشروع لأعلى عند المرور */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    /* زيادة الظل */
+}
+
+.project img {
+    width: 100%;
+    /* عرض كامل */
+    height: 200px;
+    /* ارتفاع ثابت */
+    object-fit: cover;
+    /* تغطية المساحة مع الحفاظ على التناسب */
+}
+
+.project-info {
+    padding: 20px;
+    /* هامش داخلي */
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+    /* هامش سفلي */
+}
+
+.project-info p {
+    color: #666;
+    /* لون النص الثانوي */
+    margin-bottom: 15px;
+    /* هامش سفلي */
+}
+
+
+
+
+.skills-container {
+    display: flex;
+    /* عرض المهارات في صف واحد */
+    justify-content: center;
+    /* توسيط أفقي */
+    flex-wrap: wrap;
+    /* السماح بالتفاف العناصر */
+    gap: 30px;
+    /* فراغ بين العناصر */
+}
+
+.skill {
+    text-align: center;
+    /* توسيط المحتوى */
+    background: white;
+    /* خلفية بيضاء */
+    padding: 30px;
+    /* هامش داخلي */
+    border-radius: 10px;
+    /* زوايا مدورة */
+    width: 150px;
+    /* عرض ثابت */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    /* ظل خفيف */
+    transition: all 0.3s ease;
+    /* تأثير انتقالي */
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    /* تكبير المهارة عند المرور */
+}
+
+.skill-icon {
+    margin-bottom: 15px;
+    /* هامش سفلي */
+}
+
+
+/*الحجات اللي انا عاملها*/
+.s{
+    color: goldenrod;
+}
+.p{
+    text-align: center;
+    background: linear-gradient(135deg, black 0%, #666 100%);
+  color: goldenrod;
+    height: 15vh;
+}
+
+
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod; }
+    to { text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.r{
+    color: goldenrod;
+}
+.o{
+    
+   
+ text-align:top;
+}
+

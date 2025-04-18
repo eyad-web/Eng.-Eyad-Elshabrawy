@@ -1,0 +1,96 @@
+.f{
+
+    color: goldenrod;
+}
+
+
+.g{
+
+    color:goldenrod;
+}
+
+.l{
+    color: goldenrod;
+}
+
+.p{
+    color: goldenrod;
+}
+.s{
+    color: goldenrod;
+}
+
+
+
+
+
+
+body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+
+/* Buttons */
+.actions {
+    margin-top: 20px;
+}
+
+.action-btn {
+    background: goldenrod;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 8px;
+    transition: transform 0.3s, background 0.3s;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.action-btn:hover {
+    background: #ffcc00;
+    transform: scale(1.1);
+}
+
+
+
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px goldenrod, 0 0 10px goldenrod; }
+    to { text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

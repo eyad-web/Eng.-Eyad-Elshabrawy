@@ -1,0 +1,93 @@
+
+.btn {
+    display: inline-block;
+  
+    background: #ffd700;
+    
+    color: #333;
+    
+    padding: 15px 30px;
+ 
+    border-radius: 60px;
+   
+    text-decoration: none;
+  
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+  
+    border: none;
+
+    cursor: pointer;
+  
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    /* تحريك الزر لأعلى قليلاً */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* إضافة ظل */
+}
+
+
+.k{
+
+    display: inline-block;
+  
+    background: #ffd700;
+    
+    color: #333;
+    
+    padding: 12px 30px;
+ 
+    border-radius: 50px;
+   
+    text-decoration: none;
+  
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+  
+    border: none;
+
+    cursor: pointer;
+    direction: center;
+}
+
+.k:hover {
+    transform: translateY(-3px);
+    /* تحريك الزر لأعلى قليلاً */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* إضافة ظل */
+}
+
+
+
+
+.d{
+    
+    border-style: solid;
+    height:400px; width:450px
+    ;
+   
+    border-bottom: 50px goldenrod;
+    border-left: 100px goldenrod;
+    border-right: 100px goldenrod;
+    border-top: 50px goldenrod;
+
+}
+
+input {
+    height: 50px;
+    /* ارتفاع ثابت */
+    width: 343px;
+    resize: vertical;
+    /* السماح بتغيير الارتفاع فقط */
+}
+.w{
+    background: linear-gradient(135deg, black 0%, #666 100%);
+  
+    height: 100vh;
+   
+
+}
